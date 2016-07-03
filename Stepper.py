@@ -36,6 +36,10 @@ class stepper:
 		gpio.cleanup()
 	
 	#step the motor
+	# steps = number of steps to take
+	# dir = direction stepper will move
+	# speed = defines the denominator in the waitTime equation: waitTime = 0.000001/speed. As "speed" is increased, the waitTime between steps is lowered
+	# stayOn = defines whether or not stepper should stay "on" or not. If stepper will need to receive a new step command immediately, this should be set to "True." Otherwise, it should remain at "False."
 	def step(self, steps, dir, speed=1, stayOn=False):
 		#set enable to low (i.e. power IS going to the motor)
 		gpio.output(self.enablePin, False)
