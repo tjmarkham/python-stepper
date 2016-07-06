@@ -22,7 +22,7 @@ The "step" method *requires* two arguments:
 - **Direction** (the direction the stepper will move)
 
 and has two *optional* arguments:
-- **Speed** (definies the denominator in the waitTime equation: waitTime = 0.000001/speed. As "speed" is increased, the waitTime between steps is lowered)
+- **Speed** (defines the denominator in the waitTime equation: waitTime = 0.000001/speed. As "speed" is increased, the waitTime between steps is lowered)
 - **StayOn** (defines whether or not stepper should stay "on" or not. If stepper will need to receive a new step command immediately, this should be set to "True." Otherwise, it should remain at "False.")
 
 Example (3200 steps to the right):
