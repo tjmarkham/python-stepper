@@ -2,7 +2,7 @@
 
 Python Stepper Driver for Raspberry Pi + Easy Driver (or similar stepper motor driver).
 
-Supplies a "Stepper" class with a "step" method. 
+Supplies a "Stepper" class with a "step" method that can be used to control a stepper motor's number of steps, speed, direction, and enable status. 
 
 ## Instantiation
 
